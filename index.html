@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- SITE TITLE -->
+    <title> Vishal's Portfolio</title>
+    <link rel="icon" href="images/icon_titlebar.png">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/webstyle.css">
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
+    <script>
+        function disableClick() {
+            document.onclick = function(event) {
+                if (event.button == 2) {
+                    alert('Right Click Message');
+                    return false;
+                }
+            }
+        }
+        document.onkeydown = function(e) {
+            if (e.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body data-spy="scroll" data-target="#rock-navigation" oncontextmenu="return false" onselectstart="return false" ondragstart="return false" onLoad="disableClick()">
+    <!-- START NAVIGATION -->
+    <div class="navbar navbar-default bs-dos-nav navbar-fixed-top sticky-navigation" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#rock-navigation">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+                <a href="#" class="navbar-brand">Vishal's Portfolio</a>
+            </div>
+            <nav class="collapse navbar-collapse" id="rock-navigation">
+                <ul class="nav navbar-nav navbar-right main-navigation text-uppercase">
+                    <li><a href="#home" class="smoothScroll"> Home</a></li>
+                    <li><a href="#education" class="smoothScroll">Education</a></li>
+                    <li><a href="#projects" class="smoothScroll">projects</a></li>
+                    <li><a href="#skills" class="smoothScroll">Skills</a></li>
+                    <li><a href="#about" class="smoothScroll">About</a></li>
+                    <li><a href="#resume" class="smoothScroll">Resume</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <!-- END NAVIGATION -->
+
+    <!-- START HOME -->
+    <section id="home" class="templatemo-home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-1"></div>
+                <div class="col-md-8 col-sm-10">
+                    <div class="frost">
+                        <h1 class="tm-home-title"><strong>Vishal Brahmbhatt</strong></h1>
+                        <!--<h2 class="tm-home-subtitle">Creative Director</h2>-->
+                        <p>I am an aspiring <strong>Data Scientist</strong> , <strong>Programmer</strong> & <strong>Developer</strong></p>
+                    </div>
+                </div>
+                <div>
+                    <a href="#education" class="btn btn-default smoothScroll tm-view-more-btn">Let's Begin</a>
+                </div>
+                <div class="col-md-2 col-sm-1"></div>
+            </div>
+        </div>
+    </section>
+    <!-- END HOME -->
+
+    <!-- START education -->
+    <section id="education" class="tm-padding-top-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-11">
+                    <h2 class="title">My <strong>education</strong></h2>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="education-wrapper">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <h3 class="text-uppercase tm-education-h3">2002 - 2015</h3>
+                        <hr>
+                        <p>St.Xavier's High School <br> <strong>Graduation :</strong> SSC</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="education-wrapper">
+                        <i class="fa fa-desktop" aria-hidden="true"></i>
+                        <h3 class="text-uppercase tm-education-h3">2015 - 2017</h3>
+                        <hr>
+                        <p>Kishinchand Chellaram College <br> <strong>Graduation :</strong> HSC (SCIENCE)</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="education-wrapper">
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                        <h3 class="text-uppercase tm-education-h3">2017 - 2020</h3>
+                        <hr>
+                        <p>Kishinchand Chellaram College <br> <strong>Graduation :</strong>Bachelor Of Science - IT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END education -->
+
+    <!-- START projects -->
+    <section id="projects" class="tm-projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title">
+                        <h2 class="tm-projects-title">My <strong>projects</strong></h2>
+                    </div>
+
+                    <!-- START ISO SECTION -->
+                    <div class="iso-section">
+                        <ul class="filter-wrapper clearfix">
+                            <li><a href="#" class="opc-main-bg selected" data-filter="*">All</a></li>
+                            <li><a href="#" class="opc-main-bg" data-filter=".basics">Basics</a></li>
+                            <li><a href="#" class="opc-main-bg" data-filter=".advanced">Advanced</a></li>
+                            <li><a href="#" class="opc-main-bg" data-filter=".academic">Academic</a></li>
+                            <li><a href="#" class="opc-main-bg" data-filter=".nonacademic">Non Academic</a></li>
+                            <li><a href="#" class="opc-main-bg" data-filter=".datascience">Data Science</a></li>
+                        </ul>
+                        <div class="iso-box-section">
+                            <div class="iso-box-wrapper col4-iso-box">
+                                <div class="iso-box basics nonacademic col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="videos/chatbot.gif" class="fluid-img" alt="Chatbot">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">Simple Chatty Bot</h3>
+                                            <p>A simple chat bot which interacts with user. (Python)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iso-box basics nonacademic col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="videos/Zookeeper.gif" class="fluid-img" alt="Zookeeper">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">Zookeeper</h3>
+                                            <p>A project which shows various animals to user according to user input. (Python)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iso-box basics nonacademic col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="videos/Dinogame.gif" class="fluid-img" alt="Dinogame">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">Dino game</h3>
+                                            <p>Automated the chrome Dinosaur game to jump/duck according to the obstacles coming on the way. (Python)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iso-box basics nonacademic col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="videos/Credit Calculator.gif" class="fluid-img" alt="CreditCalculator">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">Credit Calculator</h3>
+                                            <p>A project which calculates Annuity,Overpayment,etc. (Python)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iso-box advanced nonacademic col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="videos/YoutubeVideoDownloader.gif" class="fluid-img" alt="Youtube Video Downloader">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">Youtube Video Downloader</h3>
+                                            <p>An application which downloads youtube videos wheen a youtube link is provided. (HTML,CSS,Python)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iso-box advanced nonacademic col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="videos/AutomaticFilesSorter.gif" class="fluid-img" alt="Automatic Files Sorter">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">Automatic Files Sorter</h3>
+                                            <p>An application which sorts the clutter of various files to different folders. (HTML,CSS,Python)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iso-box advanced nonacademic col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="images/Jarvis.png" class="fluid-img" alt="Jarvis">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">Jarvis: Virtual Assistant</h3>
+                                            <p>A virtual assistant which uses speech recognition to interact with the user and perform the given tasks. (Python)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iso-box basics nonacademic col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="images/amazonPriceTracker.jpg" class="fluid-img" alt="Amazon Price Tracker">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">Amazon Price Tracker</h3>
+                                            <p>A program which notifies the user about the price change of a particular product. (Python)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iso-box advanced nonacademic col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="images/FR.jpg" class="fluid-img" alt="Face Recognition">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">Attendance System: Face Recognition</h3>
+                                            <p>An attendance system which uses face recognition to mark attendance with time in an excel sheet. (Python)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iso-box nonacademic datascience col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="images/Covid19-Italy.jpg" class="fluid-img" alt="Covid19-Italy">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">Covid-19 Analysis of Italy</h3>
+                                            <p>A data science project for analyzing the situation of Covid-19 in italy. (Python)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iso-box nonacademic datascience col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="images/BMI.jpg" class="fluid-img" alt="BMI">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">BMI Predictor</h3>
+                                            <p>A data science project which predicts the BMI of a person when Gender, Height & Weight is provided. (Python)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iso-box academic col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="images/wireloopgame.jpg" class="fluid-img" alt="wireloopgame">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">Wireloop Game</h3>
+                                            <p>A project which was made by using the waste from the surroundings.A wire loop game has a metal loop and it is to be taken from starting to end point along the length of the wire. It is moved in such a way that
+                                                the loop shouldn't touch the wire.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iso-box academic col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="images/eh.jpg" class="fluid-img" alt="eh">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">Vulnerability testing on Android operating system</h3>
+                                            <p>A project was made to test the vulnerabilities of Android and how can someone (Attacker) use victim’s device for various purposes.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iso-box academic col-md-3 col-sm-3 col-xs-12">
+                                    <div class="projects-thumb">
+                                        <img src="images/smcs.jpg" class="fluid-img" alt="smcs">
+                                        <div class="projects-overlay">
+                                            <h3 class="projects-item-title">Soil Moisture Control System</h3>
+                                            <p>A project was to develop a system that monitors the condition of the soil by controlling the water content of the soil.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END projects -->
+
+    <!-- START RESUME -->
+    <section id="skills" class="tm-padding-top-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <h2 class="title"><strong>Certifications</strong></h2>
+                    <div class="logos">
+                        <p>Certified by:</p>
+                        <img class="google" src="images/GoogleLogo.png" alt="Google" height="15%" width="15%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img class="microsoft" src="images/microsoftlogo.png" alt="Microsoft" height="30%" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img class="ibm" src="images/IBMLogo.png" alt="IBM" height="30%" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br/><br/>
+                        <img class="coursera" src="images/CourseraLogo.png" alt="Coursera" height="30%" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img class="udemy" src="images/UdemyLogo.jpg" alt="Udemy" height="30%" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br/><br/>
+                        <img class="sololearn" src="images/SololearnLogo.png" alt="Sololearn" height="30%" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img class="alison" src="images/AlisonLogo.png" alt="Alison" height="30%" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br/><br/>
+                        <img class="eduonix" src="images/EduonixLogo.png" alt="Eduonix" height="30%" width="30%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <h2 class="title"><strong>Skills </strong></h2>
+                    <h4 class="tm-progress-label">Front-end development <small class="progress-percent-small">70%</small></h4>
+                    <div class="progress tm-progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                    </div>
+                    <h4 class="tm-progress-label">Programming skills <small class="progress-percent-small">85%</small></h4>
+                    <div class="progress tm-progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                    </div>
+                    <h4 class="tm-progress-label">Database <small class="progress-percent-small">65%</small></h4>
+                    <div class="progress tm-progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 65%;"></div>
+                    </div>
+                    <h4 class="tm-progress-label">Data Science <small class="progress-percent-small">60%</small></h4>
+                    <div class="progress tm-progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END RESUME -->
+
+    <!-- START ABOUT -->
+    <section id="about" class="tm-about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-6 col-md-6 col-sm-offset-6 col-sm-7">
+                    <div class="title">
+                        <h1 class="tm-red-text"><strong>About</strong> <strong>Me</strong></h1>
+                    </div>
+                    <div class="abt">
+                        <p>A highly skilled, competent, and diligent individual is seeking an opportunity to establish a career as a Data Scientist. Strong willingness to exhibit my proficiency in Analytical tools, Statistics and Computing Methodologies
+                            in the professional environment.</p>
+                        <p> Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions.</p>
+                        <p>An articulate and quick thinking young individual with a natural flair to communicate and build relationships</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT -->
+
+    <!-- START SOCIAL -->
+    <section id="social" class="tm-social">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 wow rotateInUpLeft" data-wow-delay="0.3s">
+                    <div class="media facebook">
+                        <a href="https://www.facebook.com/brahmbhatt.v" target="_blank">
+                            <div class="media-object pull-left">
+                                <i class="fa fa-facebook"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading tm-social-title">Follow me on</h4>
+                                <h3>Social Facebook</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 wow rotateInUpLeft" data-wow-delay="0.6s">
+                    <div class="media linkedin">
+                        <a href="https://www.linkedin.com/in/vishal-brahmbhatt-60909a183/" target="_blank">
+                            <div class="media-object pull-left">
+                                <i class="fa fa-linkedin"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading tm-social-title">Find me on</h4>
+                                <h3>Social Linkedin</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 wow rotateInUpLeft" data-wow-delay="0.9s">
+                    <div class="media github">
+                        <a href="https://github.com/death-stroke-879" target="_blank">
+                            <div class="media-object pull-left">
+                                <i class="fa fa-github"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading tm-social-title">Check my projects on</h4>
+                                <h3>Social Github</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SOCIAL -->
+    <br><br>
+    <!-- START resume -->
+    <section id="resume" class="tm-resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="title">MY <strong>RESUME</strong></h2>
+                    <hr>
+                </div>
+                <div>
+                    <a href="VishalB_CV.pdf" target="_blank" class="btn btn-default smoothScroll tm-view-more-btn">View Resume</a>
+                </div>
+                <div class="col-md-1 col-sm-1"></div>
+                <div class="col-md-12 col-sm-12">
+                    <p>Copyright &copy;<a rel="nofollow noopener">VISHAL BRAHMBHATT</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END resume -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/imagesloaded.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
